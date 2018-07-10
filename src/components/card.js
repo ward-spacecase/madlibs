@@ -24,7 +24,8 @@ class Card extends Component {
             celebFour: '',
             adjectiveFive: '',
             contentVisible: false
-        }
+        };
+         this.INITIAL_STATE = this.state;
         this.handleInputChange = this.handleInputChange.bind(this);
         this.handleFormSubmit = this.handleFormSubmit.bind(this);
     }
@@ -34,6 +35,9 @@ class Card extends Component {
     }
 
     handleFormSubmit(event) {
+        if(this.state.contentVisible) {
+            this.setState(this.INITIAL_STATE);
+        }
         this.setState({contentVisible: !this.state.contentVisible});
         event.preventDefault;
     }
@@ -65,7 +69,9 @@ class Card extends Component {
             <div className="card">
                 <div className="card-inputs">
                     {
-                        inputData.map( data => Input(data, this.handleInputChange))
+                        inputData.map( (data, index) => {
+                            return Input(data, this.handleInputChange, index);
+                        })
                     }
                 </div>
                 <button onClick={this.handleFormSubmit}>{this.state.contentVisible ? "Clear Madlib" : "Generate Madlib"}</button>
