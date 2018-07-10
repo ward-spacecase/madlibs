@@ -1,6 +1,13 @@
 
-body {
+.home {
   background-color: rgba(207,207,207,.06);
+  display: grid;
+  justify-items: center;
+  grid-template-rows: [header-s] 218px [header-e card-s] minmax(736px, 994px) [card-e];
+}
+
+.header {
+  align-self: center;
 }
 
 .card {
@@ -18,18 +25,22 @@ body {
     background-color: skyblue;
     grid-template-rows: repeat(4, 1fr);
     grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    align-items: center;
   }
 }
 
 .input {
+  display: grid;
+  grid-template-columns: [number-s] 26px [number-e input-s] 1fr [input-e];
   &-title {
-
+    grid-column: input-s/input-e;
   }
 
   input {
-
+    grid-column: input-s/input-e;
   }
   &-number {
-
+    grid-column: number-s/number-e;
   }
 }
