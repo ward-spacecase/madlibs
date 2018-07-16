@@ -30,6 +30,23 @@
     background-color: #00cf89;
     z-index: -10;
   }
+  h1, p {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    text-align: center;
+  }
+  h1 {
+    font-weight: bolder;
+    font-size: 36px;
+    line-height: 44px;
+  }
+  p {
+    color: rgba(255,255,255,0.75);
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 19px;
+    width: 403px;
+  }
 }
 
 .card {
