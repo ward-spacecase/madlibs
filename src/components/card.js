@@ -12,7 +12,7 @@ class Card extends Component {
             adjectiveOne: '',
             celebOne: '',
             adjectiveTwo: '',
-            nounOne: '',
+            NounOne: '',
             numberOne: '',
             numberTwo: '',
             nounTwo: '',
