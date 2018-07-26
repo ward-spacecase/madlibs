@@ -74,7 +74,7 @@ class Card extends Component {
                         })
                     }
                 </div>
-                <button onClick={this.handleFormSubmit}>{this.state.contentVisible ? "Clear Madlib" : "Generate Madlib"}</button>
+                <button className={`card-${!this.state.contentVisible ? 'generate' : 'clear'}`} onClick={this.handleFormSubmit}>{this.state.contentVisible ? "Clear Madlib" : "Generate Madlib"}</button>
                 {
                     this.state.contentVisible ? <Content data={this.state}/> : ""
                 }

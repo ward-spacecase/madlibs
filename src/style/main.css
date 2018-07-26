@@ -63,6 +63,38 @@
   justify-items: center;
   align-items: center;
 }
+.card-generate {
+  background-color: #00CB79;
+  height: 50px;
+  width: 300px;
+  border-radius: 3px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+  border: none;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 22px;
+  text-align: center;
+  justify-self: center;
+}
+.card-generate:focus {
+  outline: none;
+}
+.card-clear {
+  background-color: #45b0e5;
+  height: 50px;
+  width: 300px;
+  border-radius: 3px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+  border: none;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 22px;
+  text-align: center;
+  justify-self: center;
+}
+.card-clear:focus {
+  outline: none;
+}
 
 .input {
   font-family: "Montserrat", sans-serif;

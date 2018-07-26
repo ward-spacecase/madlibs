@@ -1,4 +1,20 @@
 
+@mixin submitButton {
+  height: 50px;
+  width: 300px;
+  border-radius: 3px;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,.1);
+  border: none;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 22px;
+  text-align: center;
+  justify-self: center;
+  &:focus {
+    outline: none;
+  }
+}
+
 .home {
   background-color: rgba(207,207,207,.06);
   display: grid;
@@ -64,6 +80,14 @@
     grid-template-columns: repeat(4, 1fr);
     justify-items: center;
     align-items: center;
+  }
+  &-generate {
+    background-color: #00CB79;
+  @include submitButton();
+  }
+  &-clear {
+    background-color: #45b0e5;
+    @include  submitButton();
   }
 }
 
