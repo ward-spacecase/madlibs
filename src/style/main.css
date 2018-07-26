@@ -75,6 +75,7 @@
   font-size: 22px;
   text-align: center;
   justify-self: center;
+  transform: translateY(50%);
 }
 .card-generate:focus {
   outline: none;
@@ -91,9 +92,24 @@
   font-size: 22px;
   text-align: center;
   justify-self: center;
+  transform: translateY(50%);
 }
 .card-clear:focus {
   outline: none;
+}
+.card-content {
+  width: 1100px;
+  height: 297px;
+  background-color: #F2F2F2;
+  justify-self: center;
+  margin-bottom: 85px;
+}
+.card-content p {
+  padding: 50px 47px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 29px;
 }
 
 .input {
